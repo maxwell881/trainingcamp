@@ -1,5 +1,5 @@
-�������go run main.go ./conf/config.ini
+运行命令：go run main.go ./conf/config.ini
 
-���������ݿ������ʱ�򣬱��� dao ���е�����һ�� sql.ErrNoRows ��ʱ���Ƿ�Ӧ�� Wrap ��� error���׸��ϲ㡣Ϊʲô��Ӧ����ô����д�����룿
+我们在数据库操作的时候，比如 dao 层中当遇到一个 sql.ErrNoRows 的时候，是否应该 Wrap 这个 error，抛给上层。为什么，应该怎么做请写出代码？
 
-��Ӧ��errorֱ���׸��ϲ㡣�������£� dao����һЩ��Ϣ�Ĳ�ѯʱ��sql.ErrNoRowsֻ��һ�ֽ����ʽ���������ӳ�ʱ��panic����dao��Ѵ������ͷ���model�㣬model��Է����������ж϶����жϣ������sql.ErrNoRows��wrapһ����Ϣ��ӡ��־���նˣ�����ҵ��������Ҳ��Ӧ�������ķ��ؽ�� ����������ݿ��ܲ�����������־�Ų����⣩
+答：应该error直接抛给上层。理由如下： dao层执行操作时，sql.ErrNoRows只是一种结果形式，不是连接超时等panic错误。dao层把错误类型返回model层，model层对返回类型做断言判断，如果是sql.ErrNoRows，wrap一下信息打印日志到终端，返回业务层的数据也是应该正常的返回结果 （里面的数据可能不正常，看日志排查问题）
