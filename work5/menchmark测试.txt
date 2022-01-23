@@ -1,28 +1,28 @@
 1.
-1.1  10ÃüÁî£ºredis-benchmark.exe -n 10000 -q -d 10
+1.1  10å‘½ä»¤ï¼šredis-benchmark.exe -n 10000 -q -d 10
      SET: 40816.32 requests per second
      GET: 40160.64 requests per second
 
-     20ÃüÁî£ºredis-benchmark.exe -n 10000 -q -d 20
+     20å‘½ä»¤ï¼šredis-benchmark.exe -n 10000 -q -d 20
      SET: 40322.58 requests per second
      GET: 40000.00 requests per second
 
-     50ÃüÁî£ºredis-benchmark.exe -n 10000 -q -d 50
+     50å‘½ä»¤ï¼šredis-benchmark.exe -n 10000 -q -d 50
      SET: 38910.51 requests per second
      GET: 46948.36 requests per second
      
-     100ÃüÁî£ºredis-benchmark.exe -n 10000 -q -d 100
+     100å‘½ä»¤ï¼šredis-benchmark.exe -n 10000 -q -d 100
      SET: 36363.64 requests per second
      GET: 40650.41 requests per second
 
-     200ÃüÁî£ºredis-benchmark.exe -n 10000 -q -d 200
+     200å‘½ä»¤ï¼šredis-benchmark.exe -n 10000 -q -d 200
      SET: 38169.94 requests per second
      GET: 43478.26 requests per second
 
-     1000ÃüÁî£ºredis-benchmark.exe -n 10000 -q -d 1000
+     1000å‘½ä»¤ï¼šredis-benchmark.exe -n 10000 -q -d 1000
      SET: 44052.86 requests per second
      GET: 34013.61 requests per second
 
-     5000ÃüÁî£ºredis-benchmark.exe -n 10000 -q -d 5000
+     5000å‘½ä»¤ï¼šredis-benchmark.exe -n 10000 -q -d 5000
      SET: 19047.62 requests per second
      GET: 16025.64 requests per second
